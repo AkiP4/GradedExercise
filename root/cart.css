@@ -1,0 +1,292 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    color: #5f6062;
+    font-size: 14px;
+    background-image: url('662960.jpg');
+    background-size: cover;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+body {
+    position:relative;
+}
+
+h1 {
+    font-size: 30px;
+    color: #303439;
+}
+
+h2 {
+    font-size: 17px;
+    color:#5f6062;
+}
+
+h3 {
+    font-size: 19px;
+    color: #303439;
+}
+
+
+/* Main header formatting starts here */
+
+#HeaderBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #303439;
+    color: #bbbbbb;
+    height: 65px;
+    border: none;
+}
+
+.Group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#DropdownSidebar i{
+    font-size: 24px;
+    color: #ededf0;
+}
+
+#Title {
+    padding-left: 6vh;
+    padding-right: 3vh;
+    color: #ededf0;
+}
+
+#Account a {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+#Account a:hover {
+    color: #ededf0;
+    text-decoration: none;
+}
+
+#Cart a {
+    color: #bbbbbb;
+    text-decoration: none;
+    padding-left: 4vh;
+    padding-right: 1vh;
+}
+
+#Cart a:hover {
+    color: #ededf0;
+    text-decoration: none;
+}
+
+#SearchBar {
+    padding-left: 2vh;
+    padding-right: 3vh;
+}
+
+#SearchBar form{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    height: 25px;
+}
+
+#SearchBar form button {
+    border: none;
+    background-color: transparent;
+    
+}
+
+#SearchBar form input {
+    border: none;
+    background-color: transparent;
+}
+
+/* MenuBar formatting starts here */
+
+#MenuBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    border-bottom: 1px solid #303439;
+    height: 45px;
+}
+
+#MenuBar button {
+    background-color: transparent;
+    font-size: 15px;
+    border: none;
+    padding: 1vh 2vh 1vh 2vh;
+    transition-duration: 0.25s;
+}
+
+#MenuBar button:hover {
+    color: #0096db;
+    box-shadow: inset 0 -6px 0 #0096db;
+}
+
+#Btn_Left {
+    margin-left: 25vh;
+}
+
+#Btn_Right {
+    margin-right: 25vh;
+}
+
+/* Footer formatting starts here */
+
+#Footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #303439;
+    color: #bbbbbb;
+
+    height: 30px;
+    bottom:0;
+    left:0;
+    width:100%;
+    position: absolute;
+}
+
+#Footer a {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+#Footer a:hover {
+    color: #ededf0;
+    text-decoration: none;
+}
+
+/* this is where the cart content starts*/
+
+.products-container {
+    max-width: 750px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display:flex;
+    justify-content: flex-start;
+    border-bottom: 0px solid black;
+
+
+
+}
+
+.product.title {
+    width: 60%;
+}
+
+
+
+.total {
+    width: 12%;
+    border-bottom: 4px solid lightgrey;
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.product {
+    width: 12%;
+    border-bottom: 4px solid lightgrey;
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+    background-color: #5f6062;
+}
+
+.quantity {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+}
+
+.fa-times-circle {
+    font-size: 25px;
+    color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.products {
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+ 
+}
+
+#cartImage {
+    max-height: 100px;
+}
+
+.price {
+    display: flex;
+    font-size: 15px;
+    color: red;  
+    align-items: center;
+    margin-left: 10%;
+    position: relative;
+}
+
+.totalprice {
+    display: flex;
+    font-size: 15px;
+    color: red;  
+    align-items: center;
+
+    position: relative;
+}
+
+#spanner {
+    width: 200px;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fa-times-circle {
+    padding: 10px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+
+.basketTotal {
+    margin-left: 20px;
+}
+
+.checkoutButton {
+    margin-left: 67%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GPU Store</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="productpage.css" />
+        <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Page headers start here -->
+        <div>
+            <div id="HeaderContainer">
+                <div id="HeaderBar">
+                    <div class="Group">
+                        <div id="DropdownSidebar">
+                            <p> <i class="fa fa-bars"></i> </p>
+                        </div>
+                        <div id="Title">
+                            <p>
+                            <h1><b>Generic GPU Store</b></h1>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Group">
+                        <div id="Account">
+                            <a id="User_Login" href="error.html"> Log in </a>
+                            <span style="color: #5f6062">or</span>
+                            <a id="Create_Account" href="error.html"> Create an account </a>
+                        </div>
+                        <div class="Cart">
+                            <a href="cart.html"> 
+                                <i class="fa fa-shopping-cart"></i>  Cart: <span>0</span>
+                            </a>
+                        </div>
+                        <div id="SearchBar">
+                            <form action="error.html">
+                                <button id="SearchButton" type="submit"> <i class="fa fa-search"></i> </button>
+                                <input type="text" id="SearchField" placeholder="Search...">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="MenuBar">
+                    <button id="Btn_Left" title="Home" onclick="window.location.href='home.html'"> <b>Home</b> </button>
+                    <button title="Games and media" onclick="window.location.href='error.html'"> <b>Games and Media</b> </button>
+                    <button title="Cooling" onclick="window.location.href='error.html'"> <b>Cooling</b> </button>
+                    <button title="Accessories" onclick="window.location.href='error.html'"> <b>Accessories</b> </button>
+                    <button id="Btn_Right" title="Spare parts" onclick="window.location.href='error.html'"> <b>Spare Parts</b>
+                    </button>
+                </div>
+            </div>
+            
+            
+            <!-- Page content starts here -->
+            
+            <div id="Content">
+            
+                <div id="rectangle">
+                    <img class="ItemImg" src="rtx3080tuf.jpg">
+                    <div id="ItemDescription">
+                        <div id="name">
+                            <h1 id="prodName">ASUS TUF GAMING RTX 3080 10G</h1>
+                        </div>
+                        <div>
+                            <h3 id="price">899,90€</h3>
+                        </div>
+                        <hr>
+                        <div id="CartControl">
+                            <input type="number" id="ItemNumber" value="1" min="1">
+                            <button id="AddToCart" onClick="AddToCart()"> ADD TO CART </button>
+                        </div>
+                        <hr>
+                        <div id="Description" contenteditable=false>
+                            <strong>Features:</strong>
+                            <ul style="padding-left: 15px;">
+                                <li>Graphics engine: NVIDIA® GeForce RTX™ 3080</li>
+                                <li>Bus standard: PCI Express 4.0</li>
+                                <li>OpenGL: OpenGL®4.6</li>
+                                <li>Video memory: GGDDR6X</li>
+                                <li>Memory speed: 19 Gbps</li>
+                                <li>Memory interface: 320-bit</li>
+                                <li>Engine clock: OC Mode - 1740 MHz (Boost Clock)</li>
+                                <li>Gaming Mode (Default) - GPU Boost Clock : 1710 MHz , GPU Base Clock : 1440 MHz</li>
+                                <li>CUDA core: 8704</li>
+                                <li>Resolution: Digital max resolution: 7680x4320</li>
+                                <li>Interface: 2x HDMI 2.1 port, 3x DisplayPort 1.4a, HDCP support</li>
+                                <li>Maximum displays supported: 4</li>
+                                <li>NVlink support: No</li>
+                                <li>Recommended PSU: 850W</li>
+                                <li>Power connectors: 2 x 8-pin</li>
+                                <li>Accessories: 1 x Collection card, 1 x Speedsetup manual,</li>
+                                <li>1 x TUF certificate of Reliability</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+        <script>
+            function AddToCart() {
+                var x = document.getElementById("prodName").innerHTML;
+                element.attribute("prodAmount") = x;
+                console.log(x);
+            }
+        </script>
+
+        <!-- Page footer starts here -->
+        
+        <script src="main.js"></script>
+        <div id="Footer">
+            <a href="https://www.freepik.com/vectors/background">Background vector created by starline - www.freepik.com</a>
+        </div>
+
+    </body>
+</html>
